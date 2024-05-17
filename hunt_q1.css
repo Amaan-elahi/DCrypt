@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0d0b0c;
+}
+
+.start-screen,
+.score-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+input {
+  background-color: #0c0b0b;
+  border: 1.5px solid #2b2727;
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 1rem 1rem;
+  transition: 0.25s ease-in-out;
+}
+input:focus {
+  outline: none;
+  background-color: #000000;
+  border: 1.5px solid #1b1919;
+}
+.number-of-count {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+#start-button,
+#display-container {
+  background-color: #0c0b0b;
+  color: #fff;
+  padding: 3.1em 1.8em;
+  width: 80%;
+  max-width: 37.5em;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 1rem;
+  box-shadow: 0 0 50px 15px #760003;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #2b2727;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: 0.25s ease-in-out;
+  min-height: 550px;
+}
+#start-button,
+#display-container:hover {
+  border: 1.5px solid #1b1919;
+  background-color: #000000;
+}
+
+.header {
+  margin-bottom: 1.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.6em;
+  border-bottom: 0.1em solid #c0bfd2;
+}
+
+.question {
+  margin-bottom: 1.25em;
+  font-weight: 600;
+}
+.option-div {
+  font-size: 0.9em;
+  width: 100%;
+  padding: 1em;
+  margin: 0.3em 0;
+  text-align: left;
+  outline: none;
+  background: transparent;
+  border: 1px solid #c0bfd2;
+  border-radius: 0.3em;
+}
+.option-div:disabled {
+  color: #000000;
+  cursor: not-allowed;
+}
+.hide {
+  display: none;
+}
+
+#form {
+  width: 300px; 
+  height: 200px; 
+  padding:50px;
+}
+
+#btn {
+  margin: 10px 0;
+  padding: 10px;
+  width: 300px;
+  border-radius: 0.25rem;
+  background-color: #880c10;
+  transition: 0.25s ease-in-out
+}
+#btn:hover{
+  background-color: #760003;
+}
